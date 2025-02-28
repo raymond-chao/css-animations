@@ -1,6 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
-    background-color: white;
+    background-image: url("../img/confetti.jpg");
+
 
 }
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 
 /*----------- Header ------------*/
+h1 {
+    text-align: center;
+}
+
+
+.container {
+   align-items: center;
+   display: flex;
+   justify-content: space-evenly;
+   background-color: #f9f9f9;
+   padding: 20px;
+   border-radius: 10px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.birthday-img {
+max-width: 605px;
+max-height: auto;
+margin-left: 200px;
+border-radius: 10px;
+animation: imgZoom 2s infinite;
+}
+@keyframes imgZoom {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.1);}
+    100% {transform: scale(1);}
+}
+
+/*----------- Main ------------*/
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.input {
+    width: 70%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background: transparent;
+}
+label {
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.rsvp-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+
+.rsvp h2 {
+    color: black;
+    margin-bottom: 10px;
+}
+
+.rsvp p {
+    font-size: 16px;
+}
+
+.select-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    width: 100%; 
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.select-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.main-paragraph {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+/* <------------ Footer ------------> */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+.adress {
+    font-size: 16px;
+    color: #666;
+}

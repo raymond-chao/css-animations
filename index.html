@@ -5,30 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Rays kalas</title>
 </head>
 <body>
     <main>
-        <section class="container">
-            <div class="container-left">
-            <h1>Välkommen kära lärare </h1>
-            <p class="main-paragraph">Ray´s kalas, Fredagen 28:e Februari 19:00</p>
-            <label for="Name">Name</label>
-            <input type="Name" id="name" name="name" class="input" placeholder="Ditt namn">
-            </div>
-        </section>
-        <section class="container">
-            <div class="container-right">
-                <img src="img/birthday.jpg" alt="me on my birthday" class="birthday-img">
-            </div>
+        <h1>Välkomna kära lärare</h1>
+        <form class="form" autocomplete="off">
+            <section class="container">
+                <div class="container-left">
+                    <p class="main-paragraph">Ray´s kalas, Fredagen 28:e Februari 19:00</p>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" class="input" placeholder="Ditt namn">
+                </div>
+            </section>
 
-        <section class="">
-            <h2>RSVP</h2>
-            <p class="main-paragraph">Vänligen svara senast 21:a Februari</p>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" class="input" placeholder="Din email">
+            <section class="container">
+                <div class="container-right">
+                    <img class="birthday-img" src="img/birthday.jpg" alt="me on my birthday">
+                </div>
+            </section>
 
-        </section>
+            <section class="rsvp">
+                <div class="rsvp-container">
+                    <h2>RSVP</h2>
+                    <p class="main-paragraph">Vänligen svara senast 21:e Februari</p>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" class="input" placeholder="Din email">
+                </div>
+            </section>
 
             <div class="select-wrapper">
                 <label for="rsvp">RSVP</label>
@@ -36,18 +43,17 @@
                     <option value="ja">Ja</option>
                     <option value="nej">Nej</option>
                     <option value="vet inte">Vet inte</option>
-
                 </select>
             </div>
 
-        <section>
-            <footer>
-            <p class="adress">Örbyvägen 10, 257 30 Rydebäck</p>
-                <p class="info">Det kommer att bjudas på mat, snacks & trevligheter</p>
-                <p class="info">Jag ser fram emot att fira med dig!</p>
-            </footer>
-        </section>
+            <section>
+                <footer class="footer">
+                    <p class="adress">Örbyvägen 10, 257 30 Rydebäck 
+                        Det kommer att bjudas på mat, snacks & trevligheter 
+                        Jag ser fram emot att fira med dig!</p>
+                </footer>
+            </section>
+        </form>
     </main>
-    
 </body>
 </html>
